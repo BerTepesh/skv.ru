@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+  <meta charset="UTF-8">
+  <title>СКВ</title>
+  <link rel="stylesheet" href="f/css/flexslider.css">
+  <link rel="stylesheet" href="f/css/main.css">
+  <script src="f/js/jquery-1.11.3.min.js"></script>
+  <script src="f/js/jquery.flexslider-min.js"></script>
+  <script src="f/js/validator.min.js"></script>
+  <script src="f/js/main.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet"> 
+</head>
+<body> 
+  <div class="wrap">
+    
+      <header class="header">
+        <div class="header__ham-menu">
+          <ul>
+            <li><a href="#"><i class="icon-home"></i></a></li>
+            <li class="active"><a href="#">О компании</a></li>
+            <li><a href="#">Каталог товаров</a></li>
+            <li><a href="#">Строительство </a></li>
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Доставка </a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <a href="#">Заказать звонок</a>
+        </div>
+        <div class="container">
+          <div class="header__wrap header__main">
+            <div class="header__holder">
+              <div class="header__cell">
+                <a href="/" class="header__logo">
+                  <span>Строительство бань, <br> саун и&nbsp;SPA &laquo;под ключ&raquo;</span>
+                </a>
+              </div>
+              <div class="header__cell">
+                <div class="header__basket">
+                  <a href="#"><b>Моя корзина</b></a>
+                  <span>187 490<i class="rub">&#8399;</i></span>
+                </div>
+              </div>
+              <div class="header__cell">
+                <div class="phone header__phone">
+                  <a class="phone__num" href="tel:+7 495 227-87-30"><b>+7 495 227-87-30</b></a>
+                  <span>Режим работы: с 9:00 до 20:00</span>
+                </div>
+              </div>
+              <div class="header__cell header__call">
+                <span class="header__ham"></span>
+                <a href="#">Заказать звонок</a>
+              </div>
+            </div>
+          </div> 
+        </div>
+        <div class="header__control">
+          <div class="container">
+            <form class="header__search">
+              <input type="text" placeholder="название товара">
+              <button type="submit"><i class="icon-lens"></i></button>
+            </form>
+            <ul>
+              <li><a href="#"><i class="icon-home"></i></a></li>
+              <li class="active"><a href="#">О компании</a></li>
+              <li><a href="#">Каталог товаров</a></li>
+              <li><a href="#">Строительство </a></li>
+              <li><a href="#">Оплата</a></li>
+              <li><a href="#">Доставка </a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+            
+          </div>
+        </div>
+      </header>
+    <main role="main" class="content">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="/">Главная</a></li>
+          <li><span>Оформление заказа</span></li>
+        </ul>
+        <h1>Оформление заказа</h1>
+        <form class="reg-order form-horizontal" id="regOrderForm" action="javascript:alert('Заявка оформлена! В ближайшее время мы Вам перезвоним!')">
+          <div class="row">
+            <div class="form-group">
+              <label for="inputName" class="col-lg-offset-1 col-xs-12 col-md-3 col-lg-2 control-label">Как вас зовут</label>
+              <div class="col-lg-6 col-md-9 col-xs-12">
+                <input type="text" class="form-control" pattern="[A-Za-z]{6,}" required name="inputName" id="inputName" placeholder="Имя и фамилия">
+              </div>
+              <div class="col-xs-9 col-md-offset-3 col-lg-3 col-lg-offset-0"><p class="form-control-feedback"><span class="help-block">Обязательное для заполнения поле</span></p></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <label for="inputPhone" class="col-lg-offset-1 col-xs-12 col-md-3 col-lg-2 control-label">Телефон</label>
+              <div class="col-lg-6 col-md-9 col-xs-12">
+                <input type="tel" pattern="[+][7]{1}[0-9]{10}" class="form-control" required name="inputPhone" id="inputPhone" placeholder="+7 XXX XXX-XX-XX">
+              </div>
+              <div class="col-xs-9 col-md-offset-3 col-lg-3 col-lg-offset-0"><p class="form-control-feedback"><span class="help-block">Обязательное для заполнения поле</span></p></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group reg-order__radios">
+              <div class="col-lg-offset-1 col-xs-12 col-md-3 col-lg-2">
+                <label for="inputDelivery" class="control-label">Способ доставки</label>
+                <p><a href="#" class="reg-order__caption">Условия доставки</a></p>
+              </div>
+              <div class="col-lg-6 col-md-9 col-xs-12">
+                <div><input type="radio" id="inputDelivery1" name="inputDelivery" checked="checked"><label for="inputDelivery1">самовывоз</label></div>
+                <div><input type="radio" id="inputDelivery2" name="inputDelivery"><label for="inputDelivery2">курьерской компанией</label></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <label for="inputAddress" class="col-lg-offset-1 col-xs-12 col-md-3 col-lg-2  control-label">Адрес доставки</label>
+              <div class="col-lg-6 col-md-9 col-xs-12">
+                <textarea class="form-control" id="inputAddress" placeholder="Адрес доставки"></textarea> 
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group reg-order__radios">
+              <div class="col-lg-offset-1 col-xs-12 col-md-3 col-lg-2 ">
+                <label for="inputPay" class="control-label">Оплата</label>
+                <p><a href="#" class="reg-order__caption">Условия оплаты</a></p>
+              </div>
+              <div class="col-lg-6 col-md-9 col-xs-12">
+                <div><input type="radio" id="inputPay1" name="inputPay" checked="checked"><label for="inputPay1">наличными курьеру при получении</label></div>
+                <div><input type="radio" id="inputPay2" name="inputPay"><label for="inputPay2">пластикой картой (Visa, Mastercard) курьеру при получении</label></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <label for="inputComment" class="col-lg-offset-1 col-xs-12 col-md-3 col-lg-2 control-label">Комментарий <br>к заказу</label>
+              <div class="col-lg-6 col-md-9 col-xs-12">
+                <textarea class="form-control" id="inputComment" placeholder="Желаемое время доставки, к примеру"></textarea> 
+              </div>
+            </div>
+          </div>
+          <div class="text-center reg-order__submit">
+            <button class="btn" type="submit">Оформить заказ</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrap">
+          <div class="footer__holder">
+            <div class="footer__col">
+              <p class="footer__copyright">© 2016. Строительная компания «Вариант»</p>
+              <div class="we-accept">
+                <span>Мы принимаем<br>к оплате:</span>
+                <ul>
+                  <li><a href="#"><i class="icon-visa"></i></a></li>
+                  <li><a href="#"><i class="icon-master"></i></a></li>
+                  <li><a href="#"><i class="icon-yandex"></i></a></li>
+                </ul>
+              </div>
+            </div><div class="footer__col">
+              <div class="phone">
+                <a class="phone__num" href="tel:+7 495 227-87-30" >+7 495 227-87-30</a>
+                <span><a class="phone__address" href="#">Москва, 1-й Нагатинский проезд,<br>дом. 2, строение 2</a></span>
+              </div>
+            </div><div class="footer__col">
+              <div class="social">
+                <p>Присоединяйтесь!</p>
+                <ul>
+                  <li class="social__item social__item_insta"><a href="#"><i class="icon-insta"></i></a>
+                  </li><li class="social__item social__item_yt"><a href="#"><i class="icon-yt"></i></a>
+                  </li><li class="social__item social__item_vk"><a href="#"><i class="icon-vk"></i></a>
+                  </li><li class="social__item social__item_tw"><a href="#"><i class="icon-tw"></i></a>
+                  </li><li class="social__item social__item_fb"><a href="#"><i class="icon-fb"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div><div class="footer__col">
+              <div class="madeby">
+                <p>Создание сайтов</p>
+                <a target="_blank" href="http://design-lab.ru"><i class="icon-lab"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $('#regOrderForm').validator();
+    });
+    (function() {
+      $(window).load(function() {
+        
+      });
+    }());
+  </script>
+</body>
+</html>
